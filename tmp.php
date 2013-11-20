@@ -2,6 +2,16 @@
 /*
 */
 
+
+/*
+# キーでソート
+$arra = array(1=>"iti", 3=>"nini", 2=>"sansan");
+#ksort($arra);
+krsort($arra);
+var_dump($arra);
+*/
+
+
 /*
 $secret = "secret";
 $baseUri = "http://customer.vo.xxxx.com/directory/file";
