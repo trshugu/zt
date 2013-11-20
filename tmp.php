@@ -5,7 +5,8 @@
 
 /*
 # キーでソート
-$arra = array(1=>"iti", 3=>"nini", 2=>"sansan");
+$arra = array(1=>"iti", 3=>"nini", 1=>"sansan");
+var_dump($arra);
 #ksort($arra);
 krsort($arra);
 var_dump($arra);
