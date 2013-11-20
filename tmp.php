@@ -2,8 +2,26 @@
 /*
 */
 
+/*
+$secret = "secret";
+$baseUri = "http://customer.vo.xxxx.com/directory/file";
+$endTime = time() + 300;
 
+$targetUri = sprintf("%s?e=%d",$baseUri,$endTime);
 
+$hash = base64_encode(md5("$secret.$targetUri",true)); ###•ÏX
+print $hash."\n";
+$hash = strtr($hash, '+/', '-_');               ###•ÏX
+print $hash."\n";
+$hash = str_replace('=', '', $hash);            ###•ÏX
+print $hash."\n";
+
+$finalUri = sprintf("%s&h=%s",$targetUri,$hash);
+print $finalUri."\n";
+
+$url = $finalUri;
+print "$url<br/>\n";
+*/
 
 
 /*
