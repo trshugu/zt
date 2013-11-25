@@ -3,7 +3,11 @@
 */
 
 
-# マージ
+
+
+
+/*
+# マージ(古いPHPでは[]が効かないので注意)
 function  merge($arg1, $arg2)
 {
   $result = "";
@@ -198,6 +202,7 @@ echo <<< EOM
   </section>
 </form></div>
 EOM;
+*/
 
 
 /*
