@@ -3,6 +3,15 @@
 */
 
 
+
+
+
+
+/*
+# ラムダ式ソートワンライナー
+$c=[2,4,1,6,4];uasort($c,function($a,$b){return $a-$b;});echo var_dump($c);
+*/
+
 /*
 # 引数1で同じだった場合もう一つの引数でソート
 function cmp($a,$b){
