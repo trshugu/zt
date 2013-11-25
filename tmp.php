@@ -3,7 +3,67 @@
 */
 
 
+/*
+# 引数1で同じだった場合もう一つの引数でソート
+function cmp($a,$b){
+  echo "$a[0] and $b[0]\n";
+  if($a[0]>$b[0]){
+    return 1;
+  }
+  
+  if($a[0]<$b[0]){
+    return -1;
+  }
+  
+  if ($a[0]==$b[0]){
+    echo "zero!\n";
+    return $a[2] - $b[2];
+  } 
+  #echo "$a-$b=";
+  #echo $a - $b."\n";
+}
 
+# ソート
+$arr = [];
+array_push($arr, [12, "asdf", 0]);
+array_push($arr, [12, "vbf", 1]);
+array_push($arr, [23, "abedf", 2]);
+array_push($arr, [23, "as33f", 3]);
+array_push($arr, [23, "tow", 4]);
+array_push($arr, [23, "oeer", 5]);
+array_push($arr, [0, "asdf", 6]);
+array_push($arr, [0, "vbf", 7]);
+array_push($arr, [12, "abedf", 8]);
+array_push($arr, [12, "as33f", 9]);
+array_push($arr, [12, "tow", 10]);
+array_push($arr, [12, "oeer", 11]);
+
+uasort($arr, "cmp");
+echo print_r($arr);
+*/
+
+
+/*
+# コンペアソート基本
+function cmp($a,$b){
+  echo "$a-$b=";
+  echo $a - $b."\n";
+  return($a - $b);
+}
+
+$arr = [];
+array_push($arr, 1);
+array_push($arr, 3);
+array_push($arr, 4);
+array_push($arr, 1);
+array_push($arr, 2);
+array_push($arr, 1);
+array_push($arr, 0);
+
+# クイックソートされる
+uasort($arr, "cmp");
+echo print_r($arr);
+*/
 
 
 /*
