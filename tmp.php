@@ -13,8 +13,14 @@
 
 
 
-
-
+/*
+# implode value‚ª•Ô‹p‚³‚ê‚é
+$arr = array();
+$arr["a"] = "b";
+$arr["c"] = "d";
+print_r($arr);
+echo implode(',', $arr);
+*/
 
 
 /*
