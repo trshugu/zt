@@ -3,11 +3,17 @@
 */
 
 
+$xml = new DOMDocument( "1.0", "ISO-8859-15" );
 
+$xml_note = $xml->createElement( "Note", html_entity_decode("<11Th&lt;e last symphony composed by Ludwig van Beethoven.") );
+$xml->appendChild($xml_note);
 
+$tn = $xml->createTextNode(html_entity_decode("<222The&lt; las&t symphony composed by Ludwig van Beethoven."));
+$xml_note2 = $xml->createElement( "Note2", $tn);
+$xml->appendChild($tn);
 
-
-
+print $xml->saveXML();
+echo "ee";
 
 
 
