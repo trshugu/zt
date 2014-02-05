@@ -3,6 +3,30 @@
 */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+$arr = Array();
+$arr["a"] = "b";
+
+echo is_string(json_encode($arr));
+echo is_string(json_encode(TRUE));
+*/
+
+
+
+
+/*
 $xml = new DOMDocument( "1.0", "ISO-8859-15" );
 
 $xml_note = $xml->createElement( "Note", html_entity_decode("<11Th&lt;e last symphony composed by Ludwig van Beethoven.") );
@@ -14,8 +38,7 @@ $xml->appendChild($tn);
 
 print $xml->saveXML();
 echo "ee";
-
-
+*/
 
 
 
