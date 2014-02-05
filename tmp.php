@@ -38,8 +38,9 @@ $xml->appendChild($tn);
 
 print $xml->saveXML();
 echo "ee";
-*/
 
+// htmlspecialchars_decode
+*/
 
 
 /*
