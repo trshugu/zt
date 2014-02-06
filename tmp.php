@@ -11,6 +11,14 @@
 
 
 
+// Œ‰
+//echo date("Ym01", time());
+
+// —ˆŒ‰
+//echo date("Ym01", strtotime(-1 * -1 . " month"));
+
+// æŒ‰
+//echo date("Ym01", strtotime(-1 * 1 . " month"));
 
 
 
