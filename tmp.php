@@ -7,6 +7,33 @@
 
 
 
+/*
+// php7テスト
+$starttime = ceil(microtime(true)*1000);
+$p="";
+for ($i = 1; $i <= 1000 * 1000 * 100; $i++) {
+  $p = $p + "aaa";
+  $p = $p + "bbb";
+  $p = $p + "ccc";
+  $p = $p + "ddd";
+}
+$endtime = ceil(microtime(true)*1000);
+echo $endtime - $starttime;
+echo "\n";
+*/
+
+/*
+// ストップウォッチ
+$starttime = ceil(microtime(true)*1000);
+$val;
+for ($i = 1; $i <= 1000 * 1000; $i++) {
+    $val = $i;
+}
+$endtime = ceil(microtime(true)*1000);
+echo "\n";
+echo $endtime - $starttime;
+echo "\n";
+*/
 
 
 
@@ -545,3 +572,6 @@ echo("testてすと");
 
 # 終了タグは改行などhtml相当のものが出力されるとheaderが
 # 効かなくなる等不具合が発生するため省く。同じ理由でBOM付きUTFも厳禁。
+
+
+
