@@ -4,6 +4,24 @@
 
 
 
+/*
+$a = array("test");
+$b = array();
+$ani = array("test");
+$bni = array();
+
+
+if ($a == (String)TRUE){ echo "zundoko\n";}
+if ($a === TRUE){ echo "kiyoshi\n";}
+
+if ($b == FALSE){ echo "dondake\n";}
+if ($b === FALSE){ echo "tanishi\n";}
+
+if ($a == array("test")){ echo "touhoku\n";}
+if ($a === array("test")){ echo "zunko\n";}
+if ($b == $bni){ echo "kiri\n";}
+if ($b === $bni){ echo "tan\n";}
+*/
 
 
 
