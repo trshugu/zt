@@ -1,0 +1,13 @@
+{
+    "name": "ven/keeki",
+    "require": {
+        "cakephp/cakephp": "^3.3",
+        "ext-intl": "^1.1"
+    },
+    "authors": [
+        {
+            "name": "asdf",
+            "email": "asdf@asdf.dfee"
+        }
+    ]
+}
