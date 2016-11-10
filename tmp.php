@@ -5,6 +5,14 @@
 
 
 /*
+$a = "aaa";
+
+print(($b=$a)==="aaa");
+print($a);
+*/
+
+
+/*
 for ($i = 1; $i <= 100; $i++) {
   $str = "";
   if ($i % 3 === 0){$str .= "Fizz";}
