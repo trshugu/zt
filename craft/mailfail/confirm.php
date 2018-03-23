@@ -82,7 +82,7 @@ while ($count < 3)
   <form method="post" id="mail-check" action="main.php" enctype="multipart/form-data">
     <?php if (!empty($fname01)||$fname01=="0"){?>
       <li>
-        <p class="item">本人確認書類（1枚目）</p><p class="content">
+        <p class="item">1枚目）</p><p class="content">
           <?php echo($fname01); ?>
           <input class="form-control" type="hidden" name="fname01" value="<?php echo($fname01); ?>">
         </p>
@@ -91,7 +91,7 @@ while ($count < 3)
     
     <?php if (!empty($fname02)||$fname02=="0"){?>
       <li>
-        <p class="item">本人確認書類（2枚目）</p><p class="content">
+        <p class="item">2枚目）</p><p class="content">
           <?php echo($fname02); ?>
           <input class="form-control" type="hidden" name="fname02" value="<?php echo($fname02); ?>">
         </p>
