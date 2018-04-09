@@ -63,8 +63,8 @@ echo "mail_fname01→".$mail_fname01."<br>\n";
 
 
 
-$to[] = "go.rupe@gmail.com";
-$from_email= "kazuto.suzuki@recochoku.co.jp";
+$to[] = "go";
+$from_email= "ka";
 $from_name = "naeeem";
 $subject = 'subje';
 $body = "fairu {$mail_fname01}\n";
