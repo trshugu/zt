@@ -1,4 +1,7 @@
 <?php
+echo ""."<br>\n";
+echo "さいしょのらいち"."<br>\n";
+
 session_cache_limiter('none');
 session_start();
 require(dirname(__FILE__).DIRECTORY_SEPARATOR."functions.php");
@@ -66,7 +69,6 @@ $from_name = "naeeem";
 $subject = 'subje';
 $body = "fairu {$mail_fname01}\n";
 
-/*
 foreach( $to as $to_email ) {
   sendmail_jpn(
     $to_email,
@@ -80,8 +82,8 @@ foreach( $to as $to_email ) {
     $mail_fname02);
   sleep(1);
 }
-*/
 
+echo "1"."<br>\n";
 
 function sendmail_jpn(
   $to,
@@ -94,6 +96,7 @@ function sendmail_jpn(
   $filename01,
   $filename02)
 {
+  echo "せんどめーるじゃぱん"."<br>\n";
   $mime_type = "application/octet-stream";
   
   // メールで日本語使用するための設定をします。
@@ -130,7 +133,7 @@ function sendmail_jpn(
   // 添付ファイルの処理
   $body = attachFile($body, $boundary, $filename01, $filepath01);
   $body = attachFile($body, $boundary, $filename02, $filepath02);
-  
+  /*
   if (mb_send_mail($to, $subject, $body, $head))
   {
     $_SESSION['completion'] = true;
@@ -139,11 +142,15 @@ function sendmail_jpn(
   {
     echo 'sendmail_jpn : FAILURE.';
   }
-
+  */
+  echo "じゃぱんおわり"."<br>\n";
 }
+
+echo "2"."<br>\n";
 
 function attachFile($body,$boundary,$fileName,$filePath)
 {
+  echo "しんせんなあたっち"."<br>\n";
   if(!empty($fileName))
   {
     $fileName= mb_convert_encoding($fileName, 'ISO-2022-JP', 'auto');
@@ -160,12 +167,16 @@ function attachFile($body,$boundary,$fileName,$filePath)
     $body .= "\n";
   }
   
+  echo "あたっちおわり"."<br>\n";
   return $body;
 }
+
+echo "3"."<br>\n";
 
 // 自分が送ったファイルを削除する
 if (is_dir($uploadDir) && strpos($uploadDir, '/files/TMP') != false) 
 {
+  echo "4"."<br>\n";
   //削除する対象日を0日にしてしまえば、今になるので、今より古いものは全て削除される。
   echo "realpath(uploadDir)".realpath($uploadDir)."<br>\n";
   
@@ -175,6 +186,8 @@ if (is_dir($uploadDir) && strpos($uploadDir, '/files/TMP') != false)
   
   rmdir($uploadDir);
 }
+
+echo "おわりのらいち"."<br>\n";
 
 
 ?>

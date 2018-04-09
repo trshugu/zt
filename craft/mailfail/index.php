@@ -2,6 +2,7 @@
 session_cache_limiter('none');
 session_start();
 ini_set('display_errors', 0);
+require(dirname(__FILE__).DIRECTORY_SEPARATOR."functions.php");
 
 if(isset($_SESSION['count_error']))
 {
@@ -23,11 +24,11 @@ if(isset($_SESSION['count_error']))
   $uploadDir = tempnam("./files", "TMP");
 }
 
-echo "uploadDir→".$uploadDir."<br>\n"
+echo "uploadDir→".$uploadDir."<br>\n";
 
 // ファイルの削除処理
 // 作成から一日以上経過していたら、削除してしまう。
-// deleteOldFile(realpath('./files'),['.gitignore','empty','.htaccess']);
+deleteOldFile(realpath('./files'),['.gitignore','empty','.htaccess'],0);
 
 
 ?>
