@@ -3,6 +3,8 @@
 */
 
 
+echo "console.log('phphphpphphphphphhphpph');";
+
 
 /*
 $a = "aaa";
