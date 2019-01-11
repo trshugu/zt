@@ -3,7 +3,131 @@
 */
 
 
+
+
+
+
+
+
+/*
+
+$expire = "aaaa";
+$uri = "bbb";
+$artworkId = null;
+
+echo serialize([ $expire,$uri,$artworkId]);
+echo "\n";
+echo serialize([ $expire,$uri]);
+echo "\n";
+
+
+
+$derived_key_from_request = "abcd";
+$derived_key = "abcd";
+
+
+echo ($derived_key_from_request && $derived_key);
+echo "\n";
+echo !($derived_key_from_request && $derived_key);
+echo "\n";
+
+echo hash_equals($derived_key_from_request, $derived_key);
+echo "\n";
+echo !hash_equals($derived_key_from_request, $derived_key);
+echo "\n";
+
+$a = "str";
+$b = "str";
+
+echo $a == $b;
+echo "\n";
+echo $a === $b;
+echo "\n";
+
+
+
+
+$expire = "123";
+$url = "http://asdf.asdkja";
+
+echo serialize([$expire,$url]);
+echo "\n";
+
+$hh = hash_hmac("sha256","text","keyaaaaaaaa");
+echo $hh;
+echo "\n";
+
+echo hash_hmac("sha256","text","sss");
+echo "\n";
+echo hash_hmac("sha256","text","ddd");
+echo "\n";
+$prk = "asdf;lkjasdff";
+$context = ";kjasd;jklsdff";
+echo hash_hmac('sha256', $prk, $context);
+echo "\n";
+*/
+
+
+
+
+
+
+/*
+define('', );
+$salt = '';
+$prk = hash_hmac('sha256', 1, $salt);
+
+$context = 'aaa';
+
+
+$con =
+""
+;
+
+
+echo hash_hmac('sha256', $con, $con);
+echo "\n";
+echo hash_hmac('sha256', $con, $con."@");
+echo "\n";
+echo hash_hmac('sha256', $con."@", $con);
+echo "\n";
+echo hash_hmac('sha256', $con."@", $con."@");
+echo "\n";
+
+echo hash_hmac('sha256', 1, 2);
+echo "\n";
+echo hash_hmac('sha256', "1", "2");
+echo "\n";
+echo hash_hmac('sha256', 2, 1);
+echo "\n";
+
+echo hash_hmac('sha256', "abc", "def");
+echo "\n";
+echo hash_hmac('sha256', "def", "abc");
+echo "\n";
+
+
+echo $prk;
+echo "\n";
+echo $salt;
+echo "\n";
+echo ;
+echo "\n";
+
+echo hash_hmac('sha256', $prk, $context);
+echo "\n--\n";
+echo hash_hmac('sha256', $prk, $context."a");
+echo "\n--\n";
+echo hash_hmac('sha256', $prk, $contexto);
+echo "\n--\n";
+echo hash_hmac('sha256', $prk, $contexto."a");
+echo "\n";
+*/
+
+
+/*
 echo "console.log('phphphpphphphphphhphpph');";
+*/
 
 
 /*
