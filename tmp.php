@@ -10,6 +10,17 @@
 
 
 /*
+$start = microtime(true);
+sleep(1);
+$stop = microtime(true);
+
+echo $stop."\n";
+echo $start."\n";
+echo $stop - $start . 'sec'."\n";
+*/
+
+
+/*
 
 $expire = "aaaa";
 $uri = "bbb";
