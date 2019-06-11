@@ -8,6 +8,66 @@
 
 
 
+/*
+srand(0);
+$str = "";
+for ($j = 1; $j <= 10; $j++) {
+  $str = $str.mt_rand(0,2);
+}
+
+print_r($str."\n");
+*/
+
+
+/*
+echo "start"."\n";
+echo "a:".mt_srand(0)."\n";
+
+$mt_arr = array();
+// for ($i = 1; $i <= 4294967295; $i++) {
+for ($i = 1; $i <= 100; $i++) {
+  $str = "";
+  mt_srand(0)."\n";
+  for ($j = 1; $j <= 10; $j++) {
+    $str = $str.mt_rand(0,2);
+  }
+  $mt_arr[$str]++;
+}
+
+print_r($mt_arr);
+
+foreach($mt_arr as $k => $val)
+{
+  if ($val !== 1)
+  {
+    // echo($k .":".$val."\n");
+    // echo($k ."\n");
+    echo($val .":".$k."\n");
+  }
+}
+
+*/
+
+
+/*
+$mt_arr = array(0,0,0);
+for ($i = 1; $i <= 100000; $i++) {
+  $mt_arr[mt_rand(0,2)]++;
+}
+
+print_r($mt_arr);
+*/
+
+
+/*
+// 7.1からrandはmt_randのエイリアスに
+$arr = array(0,0,0);
+for ($i = 1; $i <= 1000*1000*10; $i++) {
+  $arr[rand(0,2)]++;
+}
+
+print_r($arr);
+*/
 
 /*
 $start = microtime(true);
